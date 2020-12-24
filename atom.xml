@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiaoguangge.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-12-24T08:53:03.671Z</updated>
+    <title>小光哥的博客</title>
+    <updated>2020-12-24T09:06:53.410Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiaoguangge.github.io"/>
     <link rel="self" href="https://xiaoguangge.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>学习，生活，记录美好</subtitle>
     <logo>https://xiaoguangge.github.io/images/avatar.png</logo>
     <icon>https://xiaoguangge.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 小光哥的博客</rights>
     <entry>
         <title type="html"><![CDATA[Github个人博客,Gridea搭建]]></title>
         <id>https://xiaoguangge.github.io/post/github-ge-ren-bo-ke-gridea-da-jian/</id>
@@ -40,7 +40,13 @@
 3.配置Gridea<br>
 <img src="https://xiaoguangge.github.io/post-images/1608799722865.png" alt="" loading="lazy"><br>
 4.开启文章评论<br>
-点击链接https://github.com/settings/applications/new, 创建</p>
+点击链接https://github.com/settings/applications/new, 创建<br>
+<img src="https://xiaoguangge.github.io/post-images/1608800156674.png" alt="" loading="lazy"><br>
+<img src="https://xiaoguangge.github.io/post-images/1608800263862.png" alt="" loading="lazy"><br>
+创建完成后可将 Client ID 和 Client Secret 填到Gridea<br>
+<img src="https://xiaoguangge.github.io/post-images/1608800716080.png" alt="" loading="lazy"><br>
+5.主题<br>
+simple主题就很好看</p>
 ]]></content>
     </entry>
 </feed>

@@ -1,13 +1,26 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Github个人博客,Gridea搭建 | Gridea</title>
-<link rel="shortcut icon" href="https://xiaoguangge.github.io/favicon.ico?v=1608799968666">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="utf-8" >
+
+<title>Github个人博客,Gridea搭建 | 小光哥的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xiaoguangge.github.io/favicon.ico?v=1608800810605">
 <link rel="stylesheet" href="https://xiaoguangge.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Github个人博客,Gridea搭建 | Gridea - Atom Feed" href="https://xiaoguangge.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
@@ -17,82 +30,81 @@
 
 2）仓库名为 [用户名.github.io] ，后续就可以用这个仓库名作为博客访问域名, 仓库..." />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://xiaoguangge.github.io">
-  <img class="avatar" src="https://xiaoguangge.github.io/images/avatar.png?v=1608799968666" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xiaoguangge.github.io">
+        <img src="https://xiaoguangge.github.io/images/avatar.png?v=1608800810605" class="site-logo">
+        <h1 class="site-title">小光哥的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      学习，生活，记录美好
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://xiaoguangge.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              Github个人博客,Gridea搭建
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-12-24
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Github个人博客,Gridea搭建</h2>
+            <div class="post-date">2020-12-24</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>Gridea官方网站: https://gridea.dev/</p>
+            <div class="post-content" v-pre>
+              <p>Gridea官方网站: https://gridea.dev/</p>
 <p>1.建立github仓库<br>
 1）首先点击&quot;+&quot;好, 新建仓库<br>
 <img src="https://xiaoguangge.github.io/post-images/1608790671356.png" alt="" loading="lazy"><br>
@@ -116,69 +128,73 @@
 3.配置Gridea<br>
 <img src="https://xiaoguangge.github.io/post-images/1608799722865.png" alt="" loading="lazy"><br>
 4.开启文章评论<br>
-点击链接https://github.com/settings/applications/new, 创建</p>
+点击链接https://github.com/settings/applications/new, 创建<br>
+<img src="https://xiaoguangge.github.io/post-images/1608800156674.png" alt="" loading="lazy"><br>
+<img src="https://xiaoguangge.github.io/post-images/1608800263862.png" alt="" loading="lazy"><br>
+创建完成后可将 Client ID 和 Client Secret 填到Gridea<br>
+<img src="https://xiaoguangge.github.io/post-images/1608800716080.png" alt="" loading="lazy"><br>
+5.主题<br>
+simple主题就很好看</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
             </div>
-          </article>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-
-        
-
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://xiaoguangge.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+      var gitalk = new Gitalk({
+        clientID: 'a9b97a28b92bcbc94717',
+        clientSecret: 'fadd3fff468a90f62496e817fb1db119dfdf31a0',
+        repo: 'xiaoguangge.github.io',
+        owner: 'xiaoguangge',
+        admin: ['xiaoguangge'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
-
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
-
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
+      gitalk.render('gitalk-container')
 
     </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
