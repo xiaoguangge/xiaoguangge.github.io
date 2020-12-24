@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://xiaoguangge.github.io</id>
+    <title>Gridea</title>
+    <updated>2020-12-24T08:52:56.605Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://xiaoguangge.github.io"/>
+    <link rel="self" href="https://xiaoguangge.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://xiaoguangge.github.io/images/avatar.png</logo>
+    <icon>https://xiaoguangge.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Github个人博客,Gridea搭建]]></title>
+        <id>https://xiaoguangge.github.io/post/github-ge-ren-bo-ke-gridea-da-jian/</id>
+        <link href="https://xiaoguangge.github.io/post/github-ge-ren-bo-ke-gridea-da-jian/">
+        </link>
+        <updated>2020-12-24T06:13:51.000Z</updated>
+        <content type="html"><![CDATA[<p>Gridea官方网站: https://gridea.dev/</p>
+<p>1.建立github仓库<br>
+1）首先点击&quot;+&quot;好, 新建仓库<br>
+<img src="https://xiaoguangge.github.io/post-images/1608790671356.png" alt="" loading="lazy"><br>
+2）仓库名为 [用户名.github.io] ，后续就可以用这个仓库名作为<strong>博客访问域名</strong>, 仓库选择公开。<br>
+<img src="https://xiaoguangge.github.io/post-images/1608798911638.png" alt="" loading="lazy"><br>
+注意：输入的是你未来要访问的URL<br>
+3）选择仓库时候，需要新建目录，才能选择，要不会显示为none。<br>
+<img src="https://xiaoguangge.github.io/post-images/1608799053976.png" alt="" loading="lazy"><br>
+<img src="https://xiaoguangge.github.io/post-images/1608799058460.png" alt="" loading="lazy"><br>
+4）创建仓库后点击仓库的settings，拉到页面最端检查自己是否开启了github pages<br>
+<img src="https://xiaoguangge.github.io/post-images/1608796360248.png" alt="" loading="lazy"><br>
+<img src="https://xiaoguangge.github.io/post-images/1608799325223.png" alt="" loading="lazy"><br>
+到这里，就成功建立了内容为空的博客页面，访问域名是你的仓库名。<br>
+2.建立github token<br>
+点击右上角头像的settings，选择菜单最下面的developer settings<br>
+<img src="https://xiaoguangge.github.io/post-images/1608796715975.png" alt="" loading="lazy"><br>
+选择personal access tokens，并生成一个新的token<br>
+<img src="https://xiaoguangge.github.io/post-images/1608797634319.png" alt="" loading="lazy"><br>
+新建token时填完名称后把repo勾选起来，然后到点击生成<br>
+<img src="https://xiaoguangge.github.io/post-images/1608797639132.png" alt="" loading="lazy">    生成成功后，建议将你的令牌保存起来，根据提示，你的这个令牌关掉页面后你再也找不到了<br>
+3.配置Gridea<br>
+<img src="https://xiaoguangge.github.io/post-images/1608799722865.png" alt="" loading="lazy"><br>
+4.开启文章评论<br>
+点击链接https://github.com/settings/applications/new, 创建</p>
+]]></content>
+    </entry>
+</feed>
