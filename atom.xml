@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xiaoguangge.github.io</id>
     <title>小光哥的博客</title>
-    <updated>2020-12-24T09:06:53.410Z</updated>
+    <updated>2020-12-24T09:15:25.565Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xiaoguangge.github.io"/>
     <link rel="self" href="https://xiaoguangge.github.io/atom.xml"/>
@@ -46,7 +46,8 @@
 创建完成后可将 Client ID 和 Client Secret 填到Gridea<br>
 <img src="https://xiaoguangge.github.io/post-images/1608800716080.png" alt="" loading="lazy"><br>
 5.主题<br>
-simple主题就很好看</p>
+simple主题就很好看<br>
+<img src="https://xiaoguangge.github.io/post-images/1608801304453.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
